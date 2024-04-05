@@ -24,7 +24,7 @@ print_r($associativeArray);
 
 // Alternatywnie zamiast print_r:
 
-    // foreach ($tablicaAsocjacyjna as $key => $value) {
+    // foreach ($associativeArray as $key => $value) {
     //     echo "$key => $value" . PHP_EOL;
     // }
 

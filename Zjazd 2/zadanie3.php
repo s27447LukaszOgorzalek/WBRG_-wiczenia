@@ -140,7 +140,6 @@
 
     <div class="form-container hidden" id="reservation-summary">
         <?php
-            // var_dump($_POST);
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $guests = htmlspecialchars($_POST['guests']);
                 $firstname = htmlspecialchars($_POST['firstname']);
@@ -173,14 +172,13 @@
                 echo "<script>
                         document.getElementById('additional_guests_info').classList.add('hidden');
                         document.getElementById('reservation-summary').classList.remove('hidden');
-                    </script>"; 
+                    </script>";
             }
         ?>
     </div>
 
     <div class="form-container hidden" id="additional_guests_summary">
         <?php
-            // var_dump($_POST);
             if ($_SERVER["REQUEST_METHOD"] == "POST" && $guests > 1) {
                 echo "<script>document.getElementById('additional_guests_summary').classList.remove('hidden');</script>";
                 echo "<h2>Additional Guests Information:</h2>";
